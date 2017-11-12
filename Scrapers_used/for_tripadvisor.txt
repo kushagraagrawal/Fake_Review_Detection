@@ -1,0 +1,15 @@
+For the tripadvisor scraper, start a scrapy project and place it in the spiders folder.
+in items.py folder create a class HotelSentimentItem and place the following fields
+
+title = scrapy.Field()
+content = scrapy.Field()
+stars = scrapy.Field()
+hotel_name = scrapy.Field()
+average_rating = scrapy.Field()
+day_of_review = scrapy.Field()
+reviewer_name = scrapy.Field()
+helpful_votes = scrapy.Field()
+number_of_reviews = scrapy.Field()
+location_of_reviewer = scrapy.Field()
+
+after this, run on terminal as scrapy crawl tripadvisor -o <filename>
